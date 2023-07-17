@@ -1,0 +1,45 @@
+# Dependency directories
+/node_modules
+/dist
+
+# Environment variables
+.env
+
+# Build artifacts
+/*.js
+/*.js.map
+/*.css
+/*.css.map
+/*.d.ts
+
+# Testing artifacts
+/*.spec.ts
+
+# IDE specific files
+/.vscode
+/.idea
+
+# Editor backups
+*~
+*.swp
+
+# Log files
+/log
+logs/
+*.log
+
+# Compiled Webpack bundles
+/dist
+
+# Cache directories
+/cache
+/.cache
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Local development server files
+/angular.json
+/tsconfig.json
+/tslint.json
