@@ -13,6 +13,6 @@ export class ApiCallsService {
       'Content-Type': 'application/json',
       'Authorization': token
     });
-    return this.http.get<any>(`${environment.apiUrl}/api/v1/register/`, { headers });
+    return this.http.post<any>(`${environment.apiUrl}/api/v1/login/`,{'firebase_token': token} , { headers });
   }
 }

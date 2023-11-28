@@ -21,7 +21,7 @@ export class LoginComponent {
       private route: ActivatedRoute,
       private router: Router,
       private auth: AuthService,
-      private api: ApiCallsService
+      private api: ApiCallsService,
   ) { }
 
   ngOnInit() {
@@ -42,6 +42,7 @@ export class LoginComponent {
         console.log(user.user.accessToken);
         this.api.getUserinfo(user.user.accessToken).subscribe((data)=>{
           console.log(data);
+          this.router.navigateByUrl('index');
         });
       });
 
